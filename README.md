@@ -4,6 +4,26 @@ A collection of the [Python-Markdown](https://github.com/dookbook/python-markdow
 
 For more details see [Dookbook - Markdown Syntax](https://dookbook.info/content/62049b264d9f1a1af723760e/).
 
+### Builtin Extensions
+
+| Extension | Extension Name | Priority |
+| --- | --- | --- |
+| `AbbrExtension` | abbr | 16 |
+| `AdmonitionExtension` | admonition | 105 |
+| `AttrListExtension` | attr_list | 8 |
+| `CodeHiliteExtension` | hilite | 30 |
+| `DefListExtension` | defindent, deflist | 85, 25 |
+| `FencedCodeExtension` | fenced_code_block | 25 |
+| `FootnoteExtension` | footnote | 17 |
+| `MetaExtension` | meta | 27 |
+| `Nl2BrExtension` | nl | 5 |
+| `TableExtension` | table | 75 |
+| `TocExtension` | toc | 5 |
+| `WikiLinkExtension` | wikilink | 75 |
+| `SaneListExtension` | olist, ulist | 40, 30 |
+| `MarkdownInHtmlExtension` | html_block, raw_html, markdown_block | 20, 30, 105 |
+| `SmartyExtension` | smarty | 2 |
+
 ### License
 
 Under the BSD 3-Clause License.
