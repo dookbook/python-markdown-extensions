@@ -38,6 +38,7 @@ md = markdown.markdown('text', extensions=['del'])
 | --- | --- | --- |
 | `DelInsExtension` | del, ins | 10, 11 |
 | `SubscriptExtension` | sub | 9 |
+| `SuperscriptExtension` | sup | 9 |
 
 ### License
 
