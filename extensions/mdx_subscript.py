@@ -24,7 +24,7 @@ from markdown import Extension, Markdown
 from markdown.inlinepatterns import SimpleTagPattern
 
 # match ~, at least one character that is not ~, and ~ again
-SUB_PATTERN = r"(\~)([^\~]+)\2"
+PATTERN = r"(\~)([^\~]+)\2"
 
 
 class SubscriptExtension(Extension):
@@ -33,7 +33,7 @@ class SubscriptExtension(Extension):
     def extendMarkdown(self, md: Markdown):
         """Insert 'subscript' pattern before 'not_strong' pattern."""
         md.registerExtension(self)
-        md.inlinePatterns.register(SimpleTagPattern(SUB_PATTERN, 'sub'), 'subscript', 9)
+        md.inlinePatterns.register(SimpleTagPattern(PATTERN, 'sub'), 'subscript', 9)
 
 
 def makeExtension(*args, **kwargs):
