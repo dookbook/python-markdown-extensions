@@ -40,6 +40,26 @@ md = markdown.markdown('text', extensions=['del'])
 | `SubscriptExtension` | sub | 9 |
 | `SuperscriptExtension` | sup | 9 |
 
+### Syntax
+
+#### `DelInsExtension`
+
+```markdown
+This is ++added content++ and this is ~~deleted content~~
+```
+
+#### `SubscriptExtension`
+
+```markdown
+The molecular composition of water is H~2~O.
+```
+
+#### `SuperscriptExtension`
+
+```markdown
+2^10^ is 1024.
+```
+
 ### License
 
 Under the BSD 3-Clause License.
