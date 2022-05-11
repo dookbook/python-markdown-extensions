@@ -34,8 +34,9 @@ INS_PATTERN = r"(\+\+)(.+?)(\+\+)"
 class DelInsExtension(Extension):
     """Adds DelIns extension."""
 
-    def extendMarkdown(self, md: Markdown, md_globals):
+    def extendMarkdown(self, md: Markdown):
         """Insert del and ins patterns before 'not_strong' pattern."""
+        md.registerExtension(self)
         md.inlinePatterns.register(SimpleTagPattern(DEL_PATTERN, 'del'), 'del', 10)
         md.inlinePatterns.register(SimpleTagPattern(INS_PATTERN, 'ins'), 'ins', 11)
 
