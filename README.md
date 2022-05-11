@@ -4,6 +4,14 @@ A collection of the [Python-Markdown](https://github.com/dookbook/python-markdow
 
 For more details see [Dookbook - Markdown Syntax](https://dookbook.info/content/62049b264d9f1a1af723760e/).
 
+### Usage
+
+```python
+import markdown
+
+md = markdown.markdown('text', extensions=['del'])
+```
+
 ### Builtin Extensions
 
 | Extension | Extension Name | Priority |
@@ -23,6 +31,12 @@ For more details see [Dookbook - Markdown Syntax](https://dookbook.info/content/
 | `SaneListExtension` | olist, ulist | 40, 30 |
 | `MarkdownInHtmlExtension` | html_block, raw_html, markdown_block | 20, 30, 105 |
 | `SmartyExtension` | smarty | 2 |
+
+### Extensions
+
+| Extension | Extension Name | Priority |
+| --- | --- | --- |
+| `DelInsExtension` | del, ins | 10, 11 |
 
 ### License
 
