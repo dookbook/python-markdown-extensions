@@ -60,6 +60,8 @@ The molecular composition of water is H~2~O.
 2^10^ is 1024.
 ```
 
+For more details see [Dookbook - Markdown Syntax](https://dookbook.info/content/62049b264d9f1a1af723760e/).
+
 ### License
 
 Under the BSD 3-Clause License.
