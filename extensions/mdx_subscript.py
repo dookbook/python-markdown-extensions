@@ -31,7 +31,6 @@ class SubscriptExtension(Extension):
     """Extension: text between ~ characters will be subscripted."""
 
     def extendMarkdown(self, md: Markdown):
-        """Insert 'subscript' pattern before 'not_strong' pattern."""
         md.registerExtension(self)
         md.inlinePatterns.register(SimpleTagPattern(PATTERN, 'sub'), 'subscript', 9)
 

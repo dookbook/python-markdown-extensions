@@ -31,7 +31,6 @@ class SuperscriptExtension(Extension):
     """Extension: text between ^ characters will be superscripted."""
 
     def extendMarkdown(self, md: Markdown):
-        """Insert 'superscript' pattern before 'not_strong' pattern."""
         md.registerExtension(self)
         md.inlinePatterns.register(SimpleTagPattern(PATTERN, 'sup'), 'superscript', 9)
 
