@@ -9,7 +9,7 @@ For more details see [Dookbook - Markdown Syntax](https://dookbook.info/content/
 ```python
 import markdown
 
-md = markdown.markdown('text', extensions=['del'])
+md = markdown.markdown('text', extensions=['abbr'])
 ```
 
 ### Builtin Extensions
@@ -39,6 +39,7 @@ md = markdown.markdown('text', extensions=['del'])
 | `DelInsExtension` | del, ins | 10, 11 |
 | `SubscriptExtension` | sub | 9 |
 | `SuperscriptExtension` | sup | 9 |
+| `KeyboardInputExtension` | kbd | 9 |
 | `FigCapExtension` | fig_cap | 7, 95, 95.1 |
 
 ### Syntax
