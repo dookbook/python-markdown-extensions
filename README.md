@@ -39,6 +39,7 @@ md = markdown.markdown('text', extensions=['del'])
 | `DelInsExtension` | del, ins | 10, 11 |
 | `SubscriptExtension` | sub | 9 |
 | `SuperscriptExtension` | sup | 9 |
+| `FigCapExtension` | fig_cap | 7, 95, 95.1 |
 
 ### Syntax
 
