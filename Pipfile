@@ -7,7 +7,7 @@ name = "pypi"
 markdown = "*"
 
 [dev-packages]
-black = "*"
+black = ">=22.3.0"
 mypy = "*"
 types-markdown = "*"
 
